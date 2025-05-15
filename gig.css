@@ -1,0 +1,529 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+#top {
+    width: 100%;
+    height: 15vh;
+    background-color:transparent;
+    color: white;
+    padding-bottom: 0.4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0;
+    position: fixed;
+}
+
+
+
+#top-left {
+    width: 360px;
+    height: 42px;
+    background-color: rgb(17, 87, 17);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: absolute;
+    top: 28px;
+    left: 38px;
+    border-radius: 35px;
+    font-size: 24px;
+    font-family: 'Playfair display';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+
+
+#top-center {
+    width: 590px;
+    height: 42px;
+    background-color: rgb(218, 204, 218);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: absolute;
+    top: 28px;
+    left: 800px;
+    transform: translateX(-50%);
+    border-radius: 35px;
+    font-size: 24px;
+    font-family: 'Playfair display';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content:space-around;
+    
+}
+
+#top-right {
+    width: 160px;
+    height: 42px;
+    background-color: rgb(224, 245, 193);
+    color: green;
+    padding: 10px;
+    text-align: center;
+    position: absolute;
+    top: 28px;
+    right: 40px;
+    border-radius: 35px;
+    font-size: 24px;
+    font-family:'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    color: green;
+    text-decoration: none;
+    font-family: "roboto", sans-serif;
+    font-size: 20px;
+}
+
+
+#first-cont {
+    background-color:  rgb(224, 245, 193);
+    width: 100%;
+    height: 135vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(medical-assistant-helping-patient-with-physiotherapy-exercises.jpg);
+    background-size: cover;
+    background-position: center 50px;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: -1;
+}
+
+#cont-child {
+    width: 550px;
+    height: 500px;
+    background-color: rgb(224, 245, 193, 0.9);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    right: 30px;
+    top: 200px;
+}
+#second-cont {
+    background-color: blue;
+    width: 100%;
+    height: 135vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#second-cont p{
+    color: white;
+    font-size: 70px;
+    font-family: "my fonts";
+    text-align: justify;
+    margin-top: -260px;
+    margin-right: 786px;
+    position: absolute;
+}
+
+#second-cont p1 {
+    color: white;
+    font-size: 30px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 50;
+    text-align: justify;
+    margin-top: 200px;
+    margin-right: 670px;
+}
+
+@keyframes bouncing1 {
+    0% {
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(20px);
+    }
+}
+
+#second-cont .second-image1 {
+    animation: bouncing1 
+    0.7s ease 
+    infinite alternate;
+    width: 280px;
+    height: 270px;
+    background-color: black;
+    position: absolute;
+    border-radius: 50px;
+    margin-left:320px;
+    background-image: url(1744854628258.jpg);
+    background-size: cover;
+}
+
+
+
+#second-cont .second-image2 {
+    animation: bouncing2
+    0.5s ease 
+    infinite alternate;
+    width: 280px;
+    height: 270px;
+    background-color: red;
+    position: absolute;
+    border-radius: 50px; 
+    margin-left: 1000px; 
+    margin-bottom: 320px; 
+    background-image: url(istockphoto-1356562128-1024x1024.jpg);
+    background-size: cover;
+}
+
+@keyframes bouncing2 {
+    0% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(20px);
+    }
+}
+
+
+#second-cont .second-image3 {
+    animation: bouncing3
+    0.6s ease
+    infinite alternate;
+    transition: 0.7s;
+    transform: translateY(20px);
+    width: 280px;
+    height: 270px;
+    background-color: orange;
+    position: absolute;
+    border-radius: 50px; 
+    margin-left: 1000px;
+    margin-top: 320px;  
+    background-image: url(480138092_1189806853152775_6673526853604868284_n.jpg);
+    background-size: cover;
+}
+
+@keyframes bouncing3 {
+    0% {
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(20px);
+    }
+}
+
+
+.about {
+    width: 140px;
+    height: 23px;
+    background-color: rgb(218, 204, 218);
+    color: green;
+    padding: 10px;
+    text-align: center;
+    position: absolute;
+    margin-top: -700px;
+    margin-right: 1050px;
+    border-radius: 50px;
+    font-size: 24px;
+    font-family: "playfair display";       
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+
+
+#third-cont {
+    background-color: whitesmoke;
+    width: 100%;
+    height: 135vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+}
+
+.Services {
+    width: 140px;
+    height: 23px;
+    background-color: rgb(218, 204, 218);
+    color: green;
+    padding: 10px;
+    text-align: center;
+    position: absolute;
+    margin-top: -700px;
+    margin-right: 1050px;
+    border-radius: 50px;
+    font-size: 24px;
+    font-family: "playfair display";       
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+
+.third-image1 {
+    width: 300px;
+    height: 400px;
+    background-color: yellow;
+    border-radius: 50px;
+    margin-bottom: 100px;
+    background-image:url(480216839_1192455059554621_4882679580908063439_n.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+.third-image2 {
+    width: 300px;
+    height: 400px;
+    background-color: yellow;
+    border-radius: 50px;
+    background-image: url(279140346_1319104461920868_5648707398454631710_n.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.third-image3 {
+    width: 300px;
+    height: 400px;
+    background-color: yellow;
+    border-radius: 50px;
+    margin-bottom: 100px;
+    background-image: url(national-cancer-institute-0YBIMOqQzt0-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#fourth-cont {
+    background-color: yellow;
+    width: 100%;
+    height: 1800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+}
+
+.goal {
+    width: 140px;
+    height: 23px;
+    background-color: rgb(218, 204, 218);
+    color: green;
+    padding: 10px;
+    text-align: center;
+    position: absolute;
+    margin-top: -1700px;
+    margin-right: 1050px;
+    border-radius: 50px;
+    font-size: 24px;
+    font-family: "playfair display";       
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+
+
+#fourth-cont p2 {
+    color: white;
+    font-size: 70px;
+    font-family: "my fonts";
+    text-align: justify;
+    margin-top: -1400px;
+    margin-right:676px;
+    position: absolute
+}
+
+#fourth-cont p3 {
+    color: white;
+    font-size: 20px;
+    font-family: "my fonts";
+    text-align: justify;
+    margin-top: -1100px;
+    margin-right: 526px;
+    position: absolute   
+}
+
+.fourth-image1 {
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    border-radius: 50%;
+    margin-bottom: 570px;
+    margin-right: 700px;
+    background-image: url(image-avatar.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+.fourth-child1 {
+    height: 350px;
+    width: 700px;
+    background-color: azure;
+    margin-left: 450px;
+    margin-bottom: 550px;
+    border-radius: 50px;
+    position: absolute;
+}
+
+.fourth-image2 {
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    border-radius: 50%;
+    margin-top: 330px;
+    margin-left: 880px;
+    background-image:url(image-avatar.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+.fourth-child2 {
+    height: 350px;
+    width: 700px;
+    background-color: azure;
+    margin-right: 450px;
+    margin-top: 280px;
+    border-radius: 50px;
+}
+
+.fourth-image3 {
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    border-radius: 50%;
+    margin-top: 1200px;
+    margin-right: 700px;
+    background-image: url(image-avatar.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+.fourth-child3 {
+    height: 350px;
+    width: 700px;
+    background-color: azure;
+    margin-left: 450px;
+    margin-top: 1150px;
+    border-radius: 50px;
+    position: absolute;
+}
+
+#fifth-cont {
+    background-color:antiquewhite;
+    width: 100%;
+    height: 87vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    z-index: -1;
+}
+
+#fifth-cont nav {
+    width: 90%;
+    height: 70%;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    text-align: center;
+}
+
+#fifth-cont i {
+    font-size: 50px;
+    margin: 0 20px;
+}
+
+.bxl-instagram{
+    color:palevioletred;
+}
+
+.bxl-facebook-square {
+    color: blue;
+}
+
+.bxl-whatsapp {
+    color: green;
+}
+
+.bxl-gmail {
+    color: red;
+}
+
+.bxl-telegram {
+    color: rgb(107, 180, 248);
+}
+
+.contact {
+    width: 140px;
+    height: 23px;
+    background-color: rgb(218, 204, 218);
+    color: green;
+    padding: 10px;
+    text-align: center;
+    position: absolute;
+    margin-top: -440px;
+    margin-right: 1050px;
+    border-radius: 50px;
+    font-size: 24px;
+    font-family: "playfair display";       
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+
+#sixth-cont {
+    background-color: orange;
+    width: 100%;
+    height: 87vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+    @media (max-width: 768px) {
+        #top {
+            flex-direction: column;
+            text-align: center;
+        }
+    
+        #top-center a {
+            margin: 0.5rem 0;
+        }
+    
+        .Services {
+            font-size: 1rem;
+            padding: 0.5rem;
+        }
+}
