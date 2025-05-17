@@ -435,135 +435,119 @@ body{
     text-align: center;
 }
 
-/* Tablet (768px and below) */
-@media (max-width: 768px) {
-    #first-cont, #second-cont, #third-cont, #fourth-cont, #fifth-cont, #sixth-cont {
-        height: auto;
-        padding: 20px;
-    }
+/* Responsive Styles */
 
+/* For tablets (768px and below) */
+@media screen and (max-width: 768px) {
     #cont-child {
         width: 90%;
         height: auto;
+        right: 5%;
+        top: 150px;
+    }
+
+    #second-cont p {
+        font-size: 40px;
+        margin-right: 0;
+        text-align: center;
         position: static;
-        margin: 20px auto;
-    }
-
-    #second-cont p {
-        font-size: 50px;
-        margin-right: 0;
-        text-align: center;
-    }
-
-    #second-cont p1 {
-        font-size: 24px;
-        margin-right: 0;
-        text-align: center;
-    }
-
-    .second-image1, .second-image2, .second-image3 {
-        width: 200px;
-        height: 200px;
-        margin: 20px auto;
-    }
-
-    .third-image1, .third-image2, .third-image3 {
-        width: 250px;
-        height: 350px;
-    }
-
-    .fourth-child1, .fourth-child2, .fourth-child3 {
-        width: 90%;
-        height: auto;
-        padding: 20px;
-    }
-}
-
-/* Mobile (480px and below) */
-@media (max-width: 480px) {
-    body {
-        font-size: 14px;
-    }
-
-    .about, .Services, .goal, .contact {
-        font-size: 18px;
-        width: 100px;
-        height: auto;
-        padding: 5px;
-        text-align: center;
-        margin-top: -600px;
-        margin-right: auto;
-    }
-
-    .second-image1, .second-image2, .second-image3 {
-        width: 150px;
-        height: 150px;
-        border-radius: 30px;
-    }
-
-    .third-image1, .third-image2, .third-image3 {
-        width: 200px;
-        height: 300px;
-        margin: 10px auto;
-    }
-
-    .fourth-child1, .fourth-child2, .fourth-child3 {
-        width: 90%;
-        height: auto;
-        padding: 10px;
-    }
-
-    .fourth-image1, .fourth-image2, .fourth-image3 {
-        width: 150px;
-        height: 150px;
-    }
-
-    #second-cont p {
-        font-size: 36px;
-        text-align: center;
     }
 
     #second-cont p1 {
         font-size: 20px;
+        margin-right: 0;
         text-align: center;
+        position: static;
+        display: block;
     }
-}
 
-/* Small mobile (320px and below) */
-@media (max-width: 320px) {
-    body {
-        font-size: 12px;
+    .second-image1,
+    .second-image2,
+    .second-image3 {
+        margin: 10px auto;
+        position: static;
     }
 
     .about, .Services, .goal, .contact {
-        font-size: 16px;
-        width: 80px;
-        padding: 5px;
+        margin: 20px auto;
+        position: static;
     }
 
-    .second-image1, .second-image2, .second-image3 {
-        width: 120px;
-        height: 120px;
-        border-radius: 20px;
+    #third-cont {
+        flex-direction: column;
+        align-items: center;
     }
 
     .third-image1, .third-image2, .third-image3 {
-        width: 180px;
-        height: 250px;
+        margin: 20px 0;
+    }
+
+    #fourth-cont {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    .fourth-child1, .fourth-child2, .fourth-child3 {
+        width: 90%;
+        margin: 20px auto;
+        position: static;
     }
 
     .fourth-image1, .fourth-image2, .fourth-image3 {
-        width: 120px;
-        height: 120px;
+        display: none;
+    }
+
+    #fifth-cont nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #fifth-cont i {
+        font-size: 40px;
+    }
+}
+
+/* For mobile devices (480px and below) */
+@media screen and (max-width: 480px) {
+    #first-cont {
+        height: auto;
+        padding: 20px 0;
+    }
+
+    #cont-child {
+        width: 95%;
+        padding: 20px;
     }
 
     #second-cont p {
-        font-size: 28px;
-        text-align: center;
+        font-size: 30px;
     }
 
     #second-cont p1 {
-        font-size: 16px;
-        text-align: center;
+        font-size: 18px;
+    }
+
+    .third-image1, .third-image2, .third-image3 {
+        width: 90%;
+        height: auto;
+    }
+
+    .fourth-child1, .fourth-child2, .fourth-child3 {
+        border-radius: 20px;
+    }
+
+    .contact, .about, .Services, .goal {
+        font-size: 18px;
+        padding: 8px;
+    }
+
+    #fifth-cont i {
+        font-size: 30px;
+    }
+
+    #sixth-cont {
+        height: auto;
+        padding: 20px;
     }
 }
